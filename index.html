@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJ Don Dala – Electro / Généraliste</title>
+  <meta name="description" content="DJ Don Dala – Electro & generaliste. Mariages, entreprises, clubs et soirees privees. Sonorisation, eclairage, ambiance sur-mesure." />
+  <meta property="og:title" content="DJ Don Dala – Electro / Generaliste" />
+  <meta property="og:description" content="Mariages, entreprises, clubs et privees. Ambiance garantie, setup pro, playlist sur-mesure." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="cover.jpg" />
+  <meta property="og:url" content="https://votre-domaine.fr" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg">
+  <style>
+    :root{
+      --bg:#0b0b10;
+      --muted:#11121a;
+      --text:#e7e7f0;
+      --sub:#a6a6b4;
+      --accent:#7c6cff;
+      --accent-2:#22d3ee;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.05);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:radial-gradient(1200px 600px at 80% -20%, rgba(124,108,255,.15), transparent 50%), radial-gradient(900px 500px at 0% 0%, rgba(34,211,238,.12), transparent 55%), var(--bg);color:var(--text)}
+    a{color:var(--text);text-decoration:none}
+    .container{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;background:rgba(11,11,16,.65);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06);z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.5px}
+    .brand .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 0 20px rgba(124,108,255,.75),0 0 28px rgba(34,211,238,.5)}
+    nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+    nav a{opacity:.9}
+    nav a:hover{opacity:1;color:var(--accent-2)}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 8px 24px rgba(124,108,255,.35);color:#0b0b10;font-weight:700}
+    .btn.secondary{background:#1a1b25;color:var(--text);box-shadow:var(--shadow)}
+    .hero{display:grid;place-items:center;padding:88px 0 60px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .hero .wrap{display:grid;gap:18px;text-align:center}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;justify-content:center;padding:6px 12px;border-radius:999px;background:rgba(124,108,255,.12);color:var(--accent-2);font-weight:600;border:1px solid rgba(124,108,255,.25)}
+    .title{font-size:clamp(38px,6vw,72px);line-height:1.03;margin:8px 0;font-weight:800;letter-spacing:.5px}
+    .sub{color:var(--sub);font-size:clamp(16px,2.5vw,20px)}
+    .cta{display:flex;gap:14px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+    .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .badge{padding:6px 10px;border-radius:999px;background:#141520;border:1px solid rgba(255,255,255,.06);color:var(--sub);font-size:14px}
+    section{padding:64px 0}
+    .panel{background:var(--muted);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .grid{display:grid;gap:18px}
+    .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{padding:22px;border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);background:linear-gradient(180deg,rgba(255,255,255,.02),transparent 60%)}
+    .card h3{margin:0 0 8px}
+    .muted{color:var(--sub)}
+    .audio-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    audio{width:100%}
+    .gallery{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:14px;border:1px solid rgba(255,255,255,.06)}
+    .quotes{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .quote{padding:20px;border-left:3px solid var(--accent-2);background:#131421;border-radius:12px;border:1px solid rgba(255,255,255,.06)}
+    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+    @media (max-width: 900px){.contact{grid-template-columns:1fr}}
+    label{display:block;margin:8px 0 6px}
+    input, textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:#10111a;color:var(--text)}
+    textarea{min-height:120px}
+    form .row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    @media (max-width:700px){form .row{grid-template-columns:1fr}}
+    .contact .panel{padding:22px}
+    footer{padding:36px 0;color:var(--sub);border-top:1px solid rgba(255,255,255,.06)}
+    .socials{display:flex;gap:14px}
+    .socials a{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:999px;background:#1a1b25;border:1px solid rgba(255,255,255,.06)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> DJ Don Dala</div>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#extraits">Extraits</a></li>
+          <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#apropos">A propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="#contact">Reserver</a>
+    </div>
+  </header>
+
+  <main id="accueil" class="hero">
+    <div class="container wrap">
+      <span class="eyebrow">Electro / Generaliste • France</span>
+      <h1 class="title">Ambiance <span style="background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">garantie</span> pour vos evenements</h1>
+      <p class="sub">Mariages, entreprises, clubs et soirees privees. Sonorisation & lumiere, programmation sur-mesure, micro et animation si besoin.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Demander un devis</a>
+        <a class="btn secondary" href="#extraits">Ecouter des extraits</a>
+      </div>
+      <div class="badges">
+        <span class="badge">Materiel pro</span>
+        <span class="badge">Contrat & assurance</span>
+        <span class="badge">Facturation</span>
+        <span class="badge">Deplacements nationaux</span>
+      </div>
+    </div>
+  </main>
+
+  <section id="prestations">
+    <div class="container">
+      <h2>Prestations</h2>
+      <div class="grid services">
+        <div class="card">
+          <h3>💍 Mariages</h3>
+          <p class="muted">Ceremonie (sonorisation), cocktail/chill, diner & soiree dansante. Playlist personnalisee, coordination avec vos temoins.</p>
+        </div>
+        <div class="card">
+          <h3>🏢 Entreprises</h3>
+          <p class="muted">Afterworks, lancements, seminaires. Ambiance adaptee a votre image de marque, annonces micro si necessaire.</p>
+        </div>
+        <div class="card">
+          <h3>🎉 Prive & Clubs</h3>
+          <p class="muted">Anniversaires, clubs, bars. Set Electro / Generaliste, transitions fluides, lecture du dancefloor.</p>
+        </div>
+        <div class="card">
+          <h3>🔊 Technique</h3>
+          <p class="muted">Sonorisation, eclairage, machine a fumee legere, micros HF. Installation discretee et securisee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="extraits">
+    <div class="container">
+      <h2>Ecouter des extraits</h2>
+      <p class="muted">Ajoutez vos fichiers .mp3 dans le meme dossier et remplacez les noms ci-dessous.</p>
+      <div class="grid audio-grid">
+        <div class="card">
+          <h3>Mix Electro – Club</h3>
+          <audio controls src="mix-electro.mp3"></audio>
+        </div>
+        <div class="card">
+          <h3>Generaliste – Mariage</h3>
+          <audio controls src="mix-mariage.mp3"></audio>
+        </div>
+        <div class="card">
+          <h3>Chill – Cocktail</h3>
+          <audio controls src="mix-chill.mp3"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <div class="container">
+      <h2>A propos</h2>
+      <div class="panel" style="padding:22px">
+        <p>Je suis <strong>DJ Don Dala</strong>, passionne par les musiques electroniques et generalistes. Ma priorite : <em>le bon titre au bon moment</em>. Je prepare chaque evenement avec vous pour creer une ambiance fidele a votre style.</p>
+        <ul class="muted">
+          <li>Brief musical et do/don't</li>
+          <li>Playlists collaboratives (Spotify/Deezer) sur demande</li>
+          <li>Materiel adapte a la jauge & au lieu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Galerie</h2>
+      <div class="grid gallery">
+        <img src="galerie-1.jpg" alt="DJ set - Don Dala" loading="lazy">
+        <img src="galerie-2.jpg" alt="Eclairage et ambiance" loading="lazy">
+        <img src="galerie-3.jpg" alt="Soiree privee" loading="lazy">
+        <img src="galerie-4.jpg" alt="Mariage - piste de danse" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <div class="panel">
+        <h2>Contact & Devis</h2>
+        <p class="muted">Reponse sous 24h. Precisez la date, le lieu, le format et la jauge.</p>
+        <form action="mailto:booking@votre-domaine.fr" method="post" enctype="text/plain">
+          <div class="row">
+            <div>
+              <label>Nom</label>
+              <input type="text" name="Nom" placeholder="Votre nom" required>
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" name="Email" placeholder="vous@mail.fr" required>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label>Date</label>
+              <input type="text" name="Date" placeholder="JJ/MM/AAAA">
+            </div>
+            <div>
+              <label>Lieu</label>
+              <input type="text" name="Lieu" placeholder="Ville / Adresse">
+            </div>
+          </div>
+          <label>Message</label>
+          <textarea name="Message" placeholder="Type d'evenement, horaires, attentes musicales..."></textarea>
+          <div style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <button class="btn" type="submit">Envoyer</button>
+            <a class="btn secondary" href="https://wa.me/33600000000" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </form>
+      </div>
+      <div class="panel" style="padding:22px">
+        <h3>Infos rapides</h3>
+        <ul class="muted">
+          <li>Base en Ile-de-France, deplacements nationaux</li>
+          <li>Facture & assurance RC pro</li>
+          <li>Materiel son & lumiere fournis</li>
+        </ul>
+        <h3>Reseaux</h3>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+          <a href="#" aria-label="SoundCloud">SoundCloud</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+      <div>© <span id="year"></span> DJ Don Dala. Tous droits reserves.</div>
+      <div class="muted">SIRET / Mentions legales • <a href="#contact">Contact</a></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
